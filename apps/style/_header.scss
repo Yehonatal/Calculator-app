@@ -1,0 +1,67 @@
+.switch {
+  display: flex;
+  gap: 15px;
+  background-color: var(--toggle-bg);
+
+  border-radius: 25px;
+  height: 30px;
+  width: 100px;
+  position: relative;
+
+  input {
+    opacity: 0;
+    // display: none;
+
+    &:checked + .one .ball {
+      transform: translate(26px);
+    }
+  }
+
+  label {
+    // border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+  }
+}
+
+.row {
+  align-items: center;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  background-color: var(--key-bg-tog);
+
+  border-radius: 50%;
+
+  // position
+  position: absolute;
+  transition: transform 0.2s linear;
+}
+
+.title,
+.numbers {
+  position: absolute;
+  font-size: 0.55em;
+  color: var(--txt-crl-2);
+
+  @include breakpoints-up(medium) {
+    font-size: 0.45em;
+  }
+}
+
+.title {
+  left: -70px;
+  top: 5px;
+}
+
+.numbers {
+  display: flex;
+  gap: 20px;
+  top: -25px;
+  right: 10px;
+}
