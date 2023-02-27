@@ -2,9 +2,10 @@
   display: flex;
   gap: 10px;
   background-color: var(--toggle-bg);
-
+  transition: transform 0.2s linear;
+  padding: 0 2px;
   border-radius: 25px;
-  height: 30px;
+  height: 28px;
   width: 100px;
   position: relative;
 
@@ -32,16 +33,12 @@
 
 .ball {
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   padding: 5px;
 
   border-radius: 50%;
   border: 2px solid var(--key-bg-tog);
-
-  // position
-  position: absolute;
-  transition: transform 0.2s linear;
 }
 
 .title,
