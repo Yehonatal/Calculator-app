@@ -30,6 +30,10 @@ $ff-family: "League Spartan", sans-serif;
   --txt-crl: hsl(221, 14%, 31%);
   --txt-crl-2: hsl(0, 0%, 100%);
   --white: hsl(0, 0%, 100%);
+
+  .theme_one .ball {
+    background-color: var(--key-bg-tog);
+  }
 }
 .theme_two {
   // Typography
@@ -59,6 +63,10 @@ $ff-family: "League Spartan", sans-serif;
   --txt-crl: hsl(60, 10%, 19%);
   --txt-crl-2: hsl(60, 10%, 19%);
   --white: hsl(0, 0%, 100%);
+
+  .theme_two .ball {
+    background-color: var(--key-bg-tog);
+  }
 }
 .theme_three {
   // Typography
@@ -87,4 +95,8 @@ $ff-family: "League Spartan", sans-serif;
   --txt-crl: hsl(52, 100%, 62%);
   --txt-crl-2: hsl(52, 100%, 62%);
   --white: hsl(0, 0%, 100%);
+
+  .theme_three .ball {
+    background-color: var(--key-bg-tog);
+  }
 }
