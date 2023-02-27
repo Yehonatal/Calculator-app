@@ -1,6 +1,6 @@
 .switch {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   background-color: var(--toggle-bg);
 
   border-radius: 25px;
@@ -12,8 +12,8 @@
     opacity: 0;
     // display: none;
 
-    &:checked + .one .ball {
-      transform: translate(26px);
+    &:checked .ball {
+      background-color: var(--key-bg-tog);
     }
   }
 
@@ -31,12 +31,13 @@
 }
 
 .ball {
+  cursor: pointer;
   width: 20px;
   height: 20px;
   padding: 5px;
-  background-color: var(--key-bg-tog);
 
   border-radius: 50%;
+  border: 2px solid var(--key-bg-tog);
 
   // position
   position: absolute;
