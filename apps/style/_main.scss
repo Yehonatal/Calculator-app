@@ -36,6 +36,19 @@
     width: 100%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.089);
     font-size: 1.5em;
+
+    .prev {
+      margin: 5px 0;
+      padding: 5px;
+      font-size: 0.55rem;
+      background-color: var(--toggle-bg);
+      border-radius: 5px;
+      opacity: 0.25;
+    }
+
+    .curr {
+      // some style
+    }
   }
 }
 
