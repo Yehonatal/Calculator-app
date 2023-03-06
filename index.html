@@ -1,126 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
 
-    <title>Frontend Mentor | Calculator app</title>
+        <title>Frontend Mentor | Calculator app</title>
 
-    <!-- Links -->
-    <link rel="stylesheet" href="apps/style/style.css" />
+        <!-- Links -->
+        <link rel="stylesheet" href="apps/style/style.css" />
 
-    <!-- Font Awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/5b12988027.js"
-      crossorigin="anonymous"
-    ></script>
+        <!-- Font Awesome Icons -->
+        <!-- <script
+            src="https://kit.fontawesome.com/5b12988027.js"
+            crossorigin="anonymous"
+        ></script> -->
 
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body class="theme_two">
-    <main class="main">
-      <div class="container">
-        <!-- Logo and theme changer -->
-        <div class="row flex">
-          <div class="logo">
-            <h3>calc</h3>
-          </div>
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body class="theme_two">
+        <main class="main">
+            <div class="container">
+                <!-- Logo and theme changer -->
+                <div class="row flex">
+                    <div class="logo">
+                        <h3>calc</h3>
+                    </div>
 
-          <!-- Theme switcher -->
-          <div class="switch">
-            <div class="title">THEME</div>
-            <div class="numbers flex">
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
+                    <!-- Theme switcher -->
+                    <div class="switch">
+                        <div class="title">THEME</div>
+                        <div class="numbers flex">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                        </div>
+
+                        <div class="switch__one">
+                            <label
+                                class="theme_one"
+                                for="theme_one"
+                                class="one"
+                            >
+                                <span class="ball"></span>
+                            </label>
+                            <input type="checkbox" id="theme_one" />
+                        </div>
+                        <div class="switch__two">
+                            <label
+                                class="theme_two"
+                                for="theme_two"
+                                class="one"
+                            >
+                                <span class="ball"></span>
+                            </label>
+                            <input type="checkbox" id="theme_two" />
+                        </div>
+                        <div class="switch__three">
+                            <label
+                                class="theme_three"
+                                for="theme_three"
+                                class="one"
+                            >
+                                <span class="ball"></span>
+                            </label>
+                            <input type="checkbox" id="theme_three" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calc Display -->
+                <div class="screen">
+                    <div class="screen__display">
+                        <p class="prev" data-prev>Made with Love</p>
+                        <p class="curr" data-curr>0</p>
+                    </div>
+                </div>
+
+                <!-- Calc Button's -->
+                <div class="wrapper">
+                    <div class="wrapper__grid">
+                        <!-- Button -->
+                        <!-- Row 1 -->
+                        <button data-num>7</button>
+                        <button data-num>8</button>
+                        <button data-num>9</button>
+                        <button class="accent_sec" data-del>DEL</button>
+                        <!-- Row 2 -->
+                        <button data-num>4</button>
+                        <button data-num>5</button>
+                        <button data-num>6</button>
+                        <button data-operation>+</button>
+                        <!-- Row 3 -->
+                        <button data-num>1</button>
+                        <button data-num>2</button>
+                        <button data-num>3</button>
+                        <button data-operation>-</button>
+                        <!-- Row 4 -->
+                        <button data-num>.</button>
+                        <button data-num>0</button>
+                        <button data-operation>÷</button>
+                        <button data-operation>x</button>
+                        <!-- Row 4 -->
+                        <button class="span-two accent_sec" data-reset>
+                            RESET
+                        </button>
+                        <button class="span-two equal_accent" data-equal>
+                            =
+                        </button>
+                    </div>
+                </div>
             </div>
+        </main>
 
-            <div class="switch__one">
-              <label class="theme_one" for="theme_one" class="one">
-                <span class="ball"></span>
-              </label>
-              <input type="checkbox" id="theme_one" />
-            </div>
-            <div class="switch__two">
-              <label class="theme_two" for="theme_two" class="one">
-                <span class="ball"></span>
-              </label>
-              <input type="checkbox" id="theme_two" />
-            </div>
-            <div class="switch__three">
-              <label class="theme_three" for="theme_three" class="one">
-                <span class="ball"></span>
-              </label>
-              <input type="checkbox" id="theme_three" />
-            </div>
-          </div>
-        </div>
+        <!-- Footer -->
+        <footer class="attribution normText">
+            Made with &#128151; by
 
-        <!-- Calc Display -->
-        <div class="screen">
-          <div class="screen__display">
-            <p class="prev" data-prev>Made with Love</p>
-            <p class="curr" data-curr>0</p>
-          </div>
-        </div>
+            <a
+                target="_blank"
+                class="impoText"
+                href="https://github.com/R4nn3r"
+            >
+                <i class="fa-brands fa-github-alt"></i>
+            </a>
+        </footer>
 
-        <!-- Calc Button's -->
-        <div class="wrapper">
-          <div class="wrapper__grid">
-            <!-- Button -->
-            <!-- Row 1 -->
-            <button data-num>7</button>
-            <button data-num>8</button>
-            <button data-num>9</button>
-            <button class="accent_sec" data-del>DEL</button>
-            <!-- Row 2 -->
-            <button data-num>4</button>
-            <button data-num>5</button>
-            <button data-num>6</button>
-            <button data-operation>+</button>
-            <!-- Row 3 -->
-            <button data-num>1</button>
-            <button data-num>2</button>
-            <button data-num>3</button>
-            <button data-operation>-</button>
-            <!-- Row 4 -->
-            <button data-num>.</button>
-            <button data-num>0</button>
-            <button data-operation>/</button>
-            <button data-operation>x</button>
-            <!-- Row 4 -->
-            <button class="span-two accent_sec" data-reset>RESET</button>
-            <button class="span-two equal_accent" data-equal>=</button>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="attribution normText">
-      Made with &#128151; by
-
-      <a target="_blank" class="impoText" href="https://github.com/R4nn3r">
-        <i class="fa-brands fa-github-alt"></i>
-      </a>
-    </footer>
-
-    <script src="apps/js/main.js"></script>
-  </body>
+        <script src="apps/js/main.js"></script>
+    </body>
 </html>

@@ -1,102 +1,102 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&display=swap");
 
 $ff-family: "League Spartan", monospace;
 
 .theme_one {
-  // Typography
-  --txt-size: 32px;
-  --gap-size: 25px;
-  --pad: 25px;
-  @include breakpoints-down(small) {
-    --txt-size: 20px;
-    --gap-size: 20px;
-    --pad: 20px;
-  }
+    // Typography
+    --txt-size: 32px;
+    --gap-size: 25px;
+    --pad: 25px;
+    @include breakpoints-down(small) {
+        --txt-size: 20px;
+        --gap-size: 20px;
+        --pad: 20px;
+    }
 
-  // Background
-  --main-bg: hsl(222, 26%, 31%);
-  --toggle-bg: hsl(223, 31%, 20%);
-  --screen-bg: hsl(224, 36%, 15%);
+    // Background
+    --main-bg: hsl(222, 26%, 31%);
+    --toggle-bg: hsl(223, 31%, 20%);
+    --screen-bg: hsl(224, 36%, 15%);
 
-  // Keys
-  --key-bg: hsl(225, 21%, 49%);
-  --key-sh: hsl(224, 28%, 35%);
-  --key-bg-tog: hsl(6, 63%, 50%);
-  --key-bg-tog-sh: hsl(6, 70%, 34%);
-  --key-bg-last: hsl(30, 25%, 89%);
-  --key-bg-last-sh: hsl(28, 16%, 65%);
+    // Keys
+    --key-bg: hsl(225, 21%, 49%);
+    --key-sh: hsl(224, 28%, 35%);
+    --key-bg-tog: hsl(6, 63%, 50%);
+    --key-bg-tog-sh: hsl(6, 70%, 34%);
+    --key-bg-last: hsl(30, 25%, 89%);
+    --key-bg-last-sh: hsl(28, 16%, 65%);
 
-  // Text
-  --txt-crl: hsl(221, 14%, 31%);
-  --txt-crl-2: hsl(0, 0%, 100%);
-  --white: hsl(0, 0%, 100%);
+    // Text
+    --txt-crl: hsl(221, 14%, 31%);
+    --txt-crl-2: hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
 
-  .theme_one .ball {
-    background-color: var(--key-bg-tog);
-  }
+    .theme_one .ball {
+        background-color: var(--key-bg-tog);
+    }
 }
 .theme_two {
-  // Typography
-  --txt-size: 32px;
-  --gap-size: 25px;
-  --pad: 25px;
-  @include breakpoints-down(small) {
-    --txt-size: 20px;
-    --gap-size: 20px;
-    --pad: 20px;
-  }
+    // Typography
+    --txt-size: 32px;
+    --gap-size: 25px;
+    --pad: 25px;
+    @include breakpoints-down(small) {
+        --txt-size: 20px;
+        --gap-size: 20px;
+        --pad: 20px;
+    }
 
-  // Background
-  --main-bg: hsl(0, 0%, 90%);
-  --toggle-bg: hsl(0, 5%, 81%);
-  --screen-bg: hsl(0, 0%, 93%);
+    // Background
+    --main-bg: hsl(0, 0%, 90%);
+    --toggle-bg: hsl(0, 5%, 81%);
+    --screen-bg: hsl(0, 0%, 93%);
 
-  // Keys
-  --key-bg: hsl(185, 42%, 37%);
-  --key-sh: hsl(185, 58%, 25%);
-  --key-bg-tog: hsl(25, 98%, 40%);
-  --key-bg-tog-sh: hsl(25, 99%, 27%);
-  --key-bg-last: hsl(45, 7%, 89%);
-  --key-bg-last-sh: hsl(35, 11%, 61%);
+    // Keys
+    --key-bg: hsl(185, 42%, 37%);
+    --key-sh: hsl(185, 58%, 25%);
+    --key-bg-tog: hsl(25, 98%, 40%);
+    --key-bg-tog-sh: hsl(25, 99%, 27%);
+    --key-bg-last: hsl(45, 7%, 89%);
+    --key-bg-last-sh: hsl(35, 11%, 61%);
 
-  // Text
-  --txt-crl: hsl(60, 10%, 19%);
-  --txt-crl-2: hsl(60, 10%, 19%);
-  --white: hsl(0, 0%, 100%);
+    // Text
+    --txt-crl: hsl(60, 10%, 19%);
+    --txt-crl-2: hsl(60, 10%, 19%);
+    --white: hsl(0, 0%, 100%);
 
-  .theme_two .ball {
-    background-color: var(--key-bg-tog);
-  }
+    .theme_two .ball {
+        background-color: var(--key-bg-tog);
+    }
 }
 .theme_three {
-  // Typography
-  --txt-size: 32px;
-  --gap-size: 25px;
-  --pad: 25px;
-  @include breakpoints-down(small) {
-    --txt-size: 20px;
-    --gap-size: 20px;
-    --pad: 20px;
-  }
-  // Background
-  --main-bg: hsl(268, 75%, 9%);
-  --toggle-bg: hsl(268, 71%, 12%);
-  --screen-bg: hsl(268, 71%, 12%);
+    // Typography
+    --txt-size: 32px;
+    --gap-size: 25px;
+    --pad: 25px;
+    @include breakpoints-down(small) {
+        --txt-size: 20px;
+        --gap-size: 20px;
+        --pad: 20px;
+    }
+    // Background
+    --main-bg: hsl(268, 75%, 9%);
+    --toggle-bg: hsl(268, 71%, 12%);
+    --screen-bg: hsl(268, 71%, 12%);
 
-  // Keys
-  --key-bg: hsl(281, 89%, 26%);
-  --key-sh: hsl(285, 91%, 52%);
-  --key-bg-tog: hsl(176, 100%, 44%);
-  --key-bg-tog-sh: hsl(177, 92%, 70%);
-  --key-bg-last: hsl(268, 47%, 21%);
-  --key-bg-last-sh: hsl(290, 70%, 36%);
+    // Keys
+    --key-bg: hsl(281, 89%, 26%);
+    --key-sh: hsl(285, 91%, 52%);
+    --key-bg-tog: hsl(176, 100%, 44%);
+    --key-bg-tog-sh: hsl(177, 92%, 70%);
+    --key-bg-last: hsl(268, 47%, 21%);
+    --key-bg-last-sh: hsl(290, 70%, 36%);
 
-  // Text
-  --txt-crl: hsl(52, 100%, 62%);
-  --txt-crl-2: hsl(52, 100%, 62%);
-  --white: hsl(0, 0%, 100%);
+    // Text
+    --txt-crl: hsl(52, 100%, 62%);
+    --txt-crl-2: hsl(52, 100%, 62%);
+    --white: hsl(0, 0%, 100%);
 
-  .theme_three .ball {
-    background-color: var(--key-bg-tog);
-  }
+    .theme_three .ball {
+        background-color: var(--key-bg-tog);
+    }
 }
