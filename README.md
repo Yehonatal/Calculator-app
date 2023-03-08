@@ -1,5 +1,7 @@
 # Frontend Mentor - Calculator app
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dea1e0a1-9850-40ec-b41a-5074ea12139c/deploy-status)](https://app.netlify.com/sites/calculator-from-fem/deploys)
+
 ![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
