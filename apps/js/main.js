@@ -65,7 +65,7 @@ class Calculator {
             case "+":
                 result = prev + curr;
                 break;
-            case "÷":
+            case "/":
                 if (curr == 0) {
                     this.prevValueToDisplay.classList.add("error");
                     this.currValueToDisplay.classList.add("error_style");
@@ -172,4 +172,33 @@ delButton.addEventListener("click", () => {
 acButton.addEventListener("click", () => {
     calculator.clear();
     calculator.update();
+});
+
+window.addEventListener("keydown", (e) => {
+    let keyValue = e.key;
+    if ((keyValue > -1 && keyValue < 10) || keyValue === ".") {
+        calculator.appendNumber(keyValue);
+        calculator.update();
+    } else if (keyValue === "Enter") {
+        calculator.compute();
+        calculator.update();
+    } else if (keyValue === "Backspace") {
+        calculator.delete();
+        calculator.update();
+    } else if (keyValue === "c" || keyValue === "C") {
+        calculator.clear();
+        calculator.update();
+    } else if (
+        keyValue === "+" ||
+        keyValue === "-" ||
+        keyValue === "x" ||
+        keyValue === "*" ||
+        keyValue === "%" ||
+        keyValue === "/"
+    ) {
+        calculator.choseOperations(keyValue);
+        calculator.update();
+    } else {
+        return;
+    }
 });
